@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  font-family: "Gowun Dodum", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+h1 {
+  font-family: "Black Han Sans", sans-serif;
+}
+
+.topMenu {
+  padding-left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(250, 158, 37);
+  padding: 8px 50px;
+  font-size: 22px;
+}
+
+.topMenu li {
+  padding: 8px 12px;
+  font-family: "Black Han Sans", sans-serif;
+}
+
+.topMenu li:hover {
+  background-color: rgb(68, 6, 150);
+  border-radius: 12px;
+}
+
+.barmenu {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+@media screen and (max-width: 700px) {
+  .topMenu {
+    flex-direction: column;
+    padding: 8px 24px;
+  }
+
+  .topMenu li {
+    width: 100%;
+    text-align: center;
+  }
+}
