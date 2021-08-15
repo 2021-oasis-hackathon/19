@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+
+    <title> Home - NEW TRIP </title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        ul{
+            list-style: none;
+            padding-left: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1> Title </h1>
+        
+        <nav class="barmenu">
+            <ul class="topMenu">
+                <li id="top"><a href="campus.html"> 캠퍼스 숙박 </a></li>
+                <li id="top"><a href="reserv.html"> 예약 </a></li>
+                <li id="top"><a href="attractions.html"> 캠핑 / 차박 </a></li>
+                <li id="top"><a href="#"> 축제 </a></li>
+            </ul> 
+        <div id="introImg"></div>
+        <div id="test"></div>
+        </nav>
+        </a>
+    </header>
+    <main class="reservMain">
+      <form action="">
+        <div>
+            <input type="radio" id="jeonbook" name="drone" value="jeonbook"
+                   checked>
+            <label for="jeonbook">전북대</label>
+
+            <input type="radio" id="jeonnam" name="drone" value="jeonnam">
+            <label for="jeonnam">전남대</label>
+
+            <input type="radio" id="suncheon" name="drone" value="suncheon">
+            <label for="suncheon">순천대</label>
+
+            <input type="radio" id="joseon" name="drone" value="joseon">
+            <label for="joseon">조선대</label>
+          </div>
+          
+        <div>
+            <input required placeholder="Name" type="text"/>        
+            <input type="datetime-local">
+            <input required placeholder="PhoneNumber" minlength="11" type="tel"/>
+            <input type="submit" value="Reservation"/>  
+        </div>
+      </form>
+      <div class="reservPic">
+      <img src="c1.jpg" width=80% align=center alt="">
+      </div>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    
+</body>
+</html>
