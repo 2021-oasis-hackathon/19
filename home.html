@@ -11,16 +11,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
-    <script language = "javascript">
-        var imgArray = new Array();
-        imgArray[0] = "C:\Users\PC\Desktop\oasis-hackathon\c1.jpg";
-        imgArray[1] = "C:\Users\PC\Desktop\oasis-hackathon\c2.jpg";
-       
-        
-        function showImage(){
-            var imgNum = Math.round(Math.random()*3);
-            var objImg = document.getElementById("introImg");
-            objImg.src = imgArray[imgNum];
+    <script language = "javascript">   
+        function showImage() {
+            var imgArray = new Array();
+            imgArray[0] = "c1.jpg";
+            imgArray[1] = "c2.jpg";
+
+            var imgNum = Math.round(Math.random());
+            var objImgsrc = imgArray[imgNum];
+            document.getElementById('introImg').innerHTML = "<img src='" + objImgsrc +"'>";
         }
     </script>
     <title> Home - NEW TRIP </title>
@@ -33,10 +32,9 @@
             padding-left: 0px;
         }
     </style>
- 
 </head>
-<body onload = "showImage()">
-    <img id = "introIMG" border="0">
+
+<body onload="showImage()">
     <header>
         <h1> Title </h1>
         
@@ -47,6 +45,7 @@
             <li id="top3"><a href="#"> 여행지 </a></li>
             <li id="top4"><a href="#"> 축제 </a></li>
         </ul>
+        <div id="introImg"></div>
         
         </nav>
 
