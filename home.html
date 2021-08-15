@@ -11,7 +11,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
-    
+    <script language = "javascript">
+        var imgArray = new Array();
+        imgArray[0] = "C:\Users\PC\Desktop\oasis-hackathon\c1.jpg";
+        imgArray[1] = "C:\Users\PC\Desktop\oasis-hackathon\c2.jpg";
+       
+        
+        function showImage(){
+            var imgNum = Math.round(Math.random()*3);
+            var objImg = document.getElementById("introImg");
+            objImg.src = imgArray[imgNum];
+        }
+    </script>
     <title> Home - NEW TRIP </title>
     <style>
         h1{
@@ -24,8 +35,8 @@
     </style>
  
 </head>
-<body>
-    <script type="text/javascript" src="script.js"></script>
+<body onload = "showImage()">
+    <img id = "introIMG" border="0">
     <header>
         <h1> Title </h1>
         
@@ -38,18 +49,17 @@
         </ul>
         
         </nav>
-        
-            <i class="fas fa-bars"></i>
+
         </a>
     </header>
-
-    <main>
-    
+   
+    <main >
     </main>
 
     <footer>
 
     </footer>
+
     
 </body>
 </html>

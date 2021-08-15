@@ -19,6 +19,7 @@ h1 {
   background-color: rgb(250, 158, 37);
   padding: 8px 50px;
   font-size: 22px;
+  border-radius:20px;
 }
 
 .topMenu li {
