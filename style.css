@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: "Gowun Dodum", sans-serif;
+  background-color: skyblue;
 }
 
 a {
@@ -23,9 +24,14 @@ h1 {
 }
 
 .topMenu li {
+  background-color: rgb(250, 158, 37);
   padding: 8px 12px;
   font-family: "Black Han Sans", sans-serif;
 }
+
+/* .clicked {
+  background-color: rgb(68, 6, 150);
+} */
 
 .topMenu li:hover {
   background-color: rgb(68, 6, 150);
@@ -36,6 +42,10 @@ h1 {
   margin-left: 100px;
   margin-right: 100px;
 }
+
+/* #introImg {
+  width:100;
+} */
 
 @media screen and (max-width: 700px) {
   .topMenu {
