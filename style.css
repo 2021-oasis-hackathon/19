@@ -20,7 +20,7 @@ h1 {
   background-color: rgb(250, 158, 37);
   padding: 8px 50px;
   font-size: 22px;
-  border-radius:20px;
+  border-radius: 20px;
 }
 
 .topMenu li {
@@ -28,7 +28,49 @@ h1 {
   padding: 8px 12px;
   font-family: "Black Han Sans", sans-serif;
 }
+.thumb {
+  padding: 0;
+  margin: 0;
+}
+.campuslist {
+  width: 600px;
+  margin: 0 auto;
+}
+.campuslist ul {
+  border-bottom: 1px solid #aaa;
+  *zoom: 1;
+}
+.campuslist li {
+  float: left;
+  width: 120px;
+  height: 180px;
+  padding: 20px 15px;
+  margin-bottom: -1px;
+  border-bottom: 1px soid #aaa;
+}
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
 
+.reservMain {
+  margin: 50px;
+  text-align: center;
+}
+
+.reservPic {
+  margin: 50px;
+  align-items: center;
+}
 /* .clicked {
   background-color: rgb(68, 6, 150);
 } */
