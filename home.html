@@ -22,18 +22,18 @@
             document.getElementById('introImg').innerHTML = "<img src='" + objImgsrc +"' width='100%', height='auto'>";
         }
 
-        function top_clicked(event) {
-            document.getElementById('test').innerHTML = document.getElementById("top").className;
-            if (event.target.classList[1] == "clicked"){
-                event.target.classList.remove("clicked");
-            }
-            else{
-                event.target.className = "clicked";
-            }
-        }
-        var normal = document.getElementById("top");
-        normal[0].addEventListener("click", top_clicked);
-        normal[1].addEventListener("click", top_clicked);
+        // function top_clicked(event) {
+        //     document.getElementById('test').innerHTML = document.getElementById("top").className;
+        //     if (event.target.classList[1] == "clicked"){
+        //         event.target.classList.remove("clicked");
+        //     }
+        //     else{
+        //         event.target.className = "clicked";
+        //     }
+        // }
+        // var normal = document.getElementById("top");
+        // normal[0].addEventListener("click", top_clicked);
+        // normal[1].addEventListener("click", top_clicked);
 
 
     </script>
