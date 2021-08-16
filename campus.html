@@ -12,23 +12,34 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
     <script language = "javascript">   
+        // function getIndex(e) {
+        //     var i = 0;
+        //     while((e = e.previousSibling) != null ) {
+        //         i++;
+        //     }
+        //     return i;
+        // }
         function getIndex(e) {
-            var i = 0;
-            while((e = e.previousSibling) != null ) {
-                i++;
+            var pa = document.getElementsByClassName('thumb');
+            var count = 0;
+            for(var i=0; i<pa.length; i++) {
+                if(e == pa[i]) {
+                    break;
+                }
+                count++;
             }
+            return count;
         }
 
-        var sites = [
-            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6852.807701647943!2d127.12757760141935!3d35.84668651823211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35702334621b3bb9%3A0xd2ef0eee158844e1!2z7KCE67aB64yA7ZWZ6rWQIOyghOyjvOy6oO2NvOyKpA!5e0!3m2!1sko!2skr!4v1629099398764!5m2!1sko!2skr",
-            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6910.218074677437!2d126.9020481911375!3d35.176852135063115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35718c565626526b%3A0x7e85baeda973a225!2z7KCE64Ko64yA7ZWZ6rWQIOyaqeu0iey6oO2NvOyKpA!5e0!3m2!1sko!2skr!4v1629099793115!5m2!1sko!2skr",
-            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3269.5070157784253!2d127.47785861450592!3d34.96896287631253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x356e0f471ab86613%3A0x5a14085c3eed42ed!2z7Iic7LKc64yA7ZWZ6rWQ!5e0!3m2!1sko!2skr!4v1629099838290!5m2!1sko!2skr",
-            "https://www.google.com/maps/embed?pb=!1sm18!1m12!1m3!1d8340.720772910758!2d126.93221633800538!3d35.142600812106345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35718c9896ea2215%3A0x7d545f1be9304f2e!2z7KGw7ISg64yA7ZWZ6rWQ!5e0!3m2!1sko!2skr!4v1629099880070!5m2!1sko!2skr"
-        ];
+        var sites = new Array();
+        sites[0] = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6852.807701647943!2d127.12757760141935!3d35.84668651823211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35702334621b3bb9%3A0xd2ef0eee158844e1!2z7KCE67aB64yA7ZWZ6rWQIOyghOyjvOy6oO2NvOyKpA!5e0!3m2!1sko!2skr!4v1629099398764!5m2!1sko!2skr";
+        sites[1] = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6910.218074677437!2d126.9020481911375!3d35.176852135063115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35718c565626526b%3A0x7e85baeda973a225!2z7KCE64Ko64yA7ZWZ6rWQIOyaqeu0iey6oO2NvOyKpA!5e0!3m2!1sko!2skr!4v1629099793115!5m2!1sko!2skr";
+        sites[2] = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3269.5070157784253!2d127.47785861450592!3d34.96896287631253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x356e0f471ab86613%3A0x5a14085c3eed42ed!2z7Iic7LKc64yA7ZWZ6rWQ!5e0!3m2!1sko!2skr!4v1629099838290!5m2!1sko!2skr";
+        sites[3] = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6913.221309037995!2d126.92718833418243!3d35.14150668325017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35718c9896ea2215%3A0x7d545f1be9304f2e!2z7KGw7ISg64yA7ZWZ6rWQ!5e0!3m2!1sko!2skr!4v1629110208496!5m2!1sko!2skr";
         function campus_click(e) {
-            document.getElementsById("map_frame").src = sites[document.getIndex(e)];
+            document.getElementById("map_frame").src = sites[getIndex(e)];
+            document.getElementById("test").innerHTML = getIndex(e);
         }
-
 
     </script>
     <title> Home - NEW TRIP </title>
@@ -43,7 +54,7 @@
     </style>
 </head>
 
-<body >
+<body>
     <header>
         <h1><a href="home.html"> Title </a></h1>
         
@@ -61,7 +72,7 @@
         </a>
     </header>
     <div class="map-responsive">
-        <iframe id="map_frame" src="https://www.google.com/maps/embed?"></iframe>
+        <iframe id="map_frame" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1064326.8834471356!2d127.0294813214184!3d35.39229618773779!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sko!2skr!4v1629103241603!5m2!1sko!2skr"></iframe>
         </div>
     <main class="campuslist">
         <ul>
@@ -69,7 +80,7 @@
             <li><a href="#"><span class="thumb" onclick="campus_click(this)"><img src="대학1.png" width=120px alt=""><strong>전남대학교</strong></span></a></li>
             <li><a href="#"><span class="thumb" onclick="campus_click(this)"><img src="대학3.png" width=120px alt=""><strong>순천대학교</strong></span></a></li>
             <li><a href="#"><span class="thumb" onclick="campus_click(this)"><img src="대학4.png" width=120px alt=""><strong>조선대학교</strong></span></a></li>
-          
+            <p id="test"></p>
         </ul>
     </main>
 
