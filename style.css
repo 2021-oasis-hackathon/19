@@ -12,6 +12,11 @@ h1 {
   font-family: "Black Han Sans", sans-serif;
 }
 
+dl {
+  left: 40px;
+  position: relative;
+}
+
 .topMenu {
   padding-left: 0;
   display: flex;
@@ -83,6 +88,19 @@ h1 {
 .barmenu {
   margin-left: 100px;
   margin-right: 100px;
+}
+.btns {
+  text-align: right;
+  right: 40px;
+  top: 25px;
+  position: relative;
+}
+
+.container {
+  width: 80%;
+  left: 100px;
+  top: 100px;
+  position: relative;
 }
 
 /* #introImg {
