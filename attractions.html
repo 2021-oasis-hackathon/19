@@ -11,7 +11,32 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+    <script language = "javascript">   
+        function showImage() {
+            var imgArray = new Array();
+            imgArray[0] = "c1.jpg";
+            imgArray[1] = "c2.jpg";
     
+            var imgNum = Math.round(Math.random());
+            var objImgsrc = imgArray[imgNum];
+            document.getElementById('introImg').innerHTML = "<img src='" + objImgsrc +"' width='100%', height='auto'>";
+        }
+
+        function top_clicked(event) {
+            document.getElementById('test').innerHTML = document.getElementById("top").className;
+            if (event.target.classList[1] == "clicked"){
+                event.target.classList.remove("clicked");
+            }
+            else{
+                event.target.className = "clicked";
+            }
+        }
+        var normal = document.getElementById("top");
+        normal[0].addEventListener("click", top_clicked);
+        normal[1].addEventListener("click", top_clicked);
+
+
+    </script>
     <title> Home - NEW TRIP </title>
     <style>
         h1{
