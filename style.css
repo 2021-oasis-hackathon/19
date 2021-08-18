@@ -94,6 +94,11 @@ dl {
   top: 25px;
   position: relative;
 }
+.localbtns {
+  left: 150px;
+  position: relative;
+  width: 400px;
+}
 
 /* .container {
   width: 80%;
@@ -104,6 +109,7 @@ dl {
 
 .db {
   width: 80%;
+  height: 100%;
   left: 100px;
   top: 100px;
   position: relative;
