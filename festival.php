@@ -53,9 +53,10 @@
     //     }
         $sql = "SELECT * FROM festival_tb";
         $result = mysqli_query($conn, $sql);
-        while($row = mysqli_fetch_array($result)) {
-            echo '<li>'.$row['f_name'].'</li>';
-        }
+        $row = mysqli_fetch_array($result)
+        // while() {
+        //     echo '<li>'.$row['f_name'].'</li>';
+        // }
         ?>
         </ul>
         </div>
@@ -73,7 +74,7 @@
 
                         <td>
                         <dl>
-                            <dt><h3><?echo $mysqli_fetch_array($result)['f_name']?></h3></dt>
+                            <dt><h3><?php echo $row['f_name']?></h3></dt>
                             <dd>축제 설명</dd>
                         </td>
                         </dl>
