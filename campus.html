@@ -12,13 +12,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
     <script language = "javascript">   
-        // function getIndex(e) {
-        //     var i = 0;
-        //     while((e = e.previousSibling) != null ) {
-        //         i++;
-        //     }
-        //     return i;
-        // }
         function getIndex(e) {
             var pa = document.getElementsByClassName('thumb');
             var count = 0;
@@ -38,7 +31,6 @@
         sites[3] = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6913.221309037995!2d126.92718833418243!3d35.14150668325017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35718c9896ea2215%3A0x7d545f1be9304f2e!2z7KGw7ISg64yA7ZWZ6rWQ!5e0!3m2!1sko!2skr!4v1629110208496!5m2!1sko!2skr";
         function campus_click(e) {
             document.getElementById("map_frame").src = sites[getIndex(e)];
-            document.getElementById("test").innerHTML = getIndex(e);
         }
 
     </script>
@@ -64,7 +56,7 @@
                 border-radius: 12px;"><a href="campus.html"> 캠퍼스 숙박 </a></li>
                 <li id="top"><a href="reserv.html"> 예약 </a></li>
                 <li id="top"><a href="attractions.html"> 여행지 </a></li>
-                <li id="top"><a href="festival.html"> 축제 </a></li>
+                <li id="top"><a href="festival.php"> 축제 </a></li>
             </ul> 
         <div id="introImg"></div>
         <div id="test"></div>
@@ -80,7 +72,6 @@
             <li><a href="#"><span class="thumb" onclick="campus_click(this)"><img src="대학1.png" width=120px alt=""><strong>전남대학교</strong></span></a></li>
             <li><a href="#"><span class="thumb" onclick="campus_click(this)"><img src="대학3.png" width=120px alt=""><strong>순천대학교</strong></span></a></li>
             <li><a href="#"><span class="thumb" onclick="campus_click(this)"><img src="대학4.png" width=120px alt=""><strong>조선대학교</strong></span></a></li>
-            <p id="test"></p>
         </ul>
     </main>
 

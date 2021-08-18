@@ -60,10 +60,9 @@ dl {
   height: 0;
 }
 .map-responsive iframe {
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
+  width: 80%;
+  height: 70%;
+  left: 120px;
   position: absolute;
 }
 
@@ -96,11 +95,28 @@ dl {
   position: relative;
 }
 
-.container {
+/* .container {
   width: 80%;
   left: 100px;
   top: 100px;
   position: relative;
+} */
+
+.db {
+  width: 80%;
+  left: 100px;
+  top: 100px;
+  position: relative;
+}
+
+.reservgo {
+  width: 80%;
+  height: 50%;
+  left: 100px;
+}
+
+.reservwin {
+  display: none;
 }
 
 /* #introImg {

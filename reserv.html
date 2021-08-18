@@ -11,6 +11,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+    <script language = "javascript">   
+        function reservcu() {
+            document.getElementsByClassName("reservwin").style.display = "block";
+        }
+    </script>
 
     <title> Home - NEW TRIP </title>
     <style>
@@ -34,7 +39,7 @@
                 <li id="top" style="background-color: rgb(68, 6, 150);
                 border-radius: 12px;"><a href="reserv.html"> 예약 </a></li>
                 <li id="top"><a href="attractions.html"> 여행지 </a></li>
-                <li id="top"><a href="festival.html"> 축제 </a></li>
+                <li id="top"><a href="festival.php"> 축제 </a></li>
             </ul> 
         <div id="introImg"></div>
         <div id="test"></div>
@@ -56,18 +61,23 @@
 
             <input type="radio" id="joseon" name="drone" value="joseon">
             <label for="joseon">조선대</label>
+
           </div>
           
         <div>
-            <input required placeholder="Name" type="text"/>        
+            <!-- <input required placeholder="Name" type="text"/>         -->
             <input type="datetime-local">
-            <input required placeholder="PhoneNumber" minlength="11" type="tel"/>
-            <input type="submit" value="Reservation"/>  
+            <!-- <input required placeholder="PhoneNumber" minlength="11" type="tel"/> -->
+            <input type="submit" onclick="reservcu()" value="예약 현황 보기">  
         </div>
-      </form>
-      <div class="reservPic">
-      <img src="c1.jpg" width=80% align=center alt="">
-      </div>
+        </form>
+        <div class="reservPic">
+        <img src="c1.jpg" width=80% align=center alt="">
+        </div>
+        <div class="reservwin">
+            <input type="button" value="~월~일">
+        </div>
+
     </main>
 
     <footer>

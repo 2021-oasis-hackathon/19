@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="kr">
 <head>
@@ -34,7 +36,7 @@
                 <li id="top"><a href="reserv.html"> 예약 </a></li>
                 <li id="top"><a href="attractions.html"> 여행지 </a></li>
                 <li id="top" style="background-color: rgb(68, 6, 150);
-                border-radius: 12px;"><a href="festival.html"> 축제 </a></li>
+                border-radius: 12px;"><a href="festival.php"> 축제 </a></li>
             </ul> 
         <div id="introImg"></div>
         <div id="test"></div>
@@ -42,6 +44,21 @@
         </a>
     </header>
     <main>
+        <div class='db'>
+        <ul>
+        <?php
+        $conn = mysqli_connect('localhost', 'root', '991025', 'mysql');
+    // if(mysql_connect_error($conn)) {
+    //         echo "에러 발생";
+    //     }
+        $sql = "SELECT * FROM festival_tb";
+        $result = mysqli_query($conn, $sql);
+        while($row = mysqli_fetch_array($result)) {
+            echo '<li>'.$row['f_name'].'</li>';
+        }
+        ?>
+        </ul>
+        </div>
         <div class="btns">
             <input href="#" type="button" value="1">
             <input href="#" type="button" value="2">
@@ -56,7 +73,7 @@
 
                         <td>
                         <dl>
-                            <dt><h3>축제1</h3></dt>
+                            <dt><h3><?echo $mysqli_fetch_array($result)['f_name']?></h3></dt>
                             <dd>축제 설명</dd>
                         </td>
                         </dl>
