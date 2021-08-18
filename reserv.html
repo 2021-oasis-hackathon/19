@@ -47,37 +47,29 @@
         </a>
     </header>
     <main class="reservMain">
-      <form action="">
-        <div>
-            <input type="radio" id="jeonbook" name="drone" value="jeonbook"
-                   checked>
-            <label for="jeonbook">전북대</label>
 
-            <input type="radio" id="jeonnam" name="drone" value="jeonnam">
-            <label for="jeonnam">전남대</label>
-
-            <input type="radio" id="suncheon" name="drone" value="suncheon">
-            <label for="suncheon">순천대</label>
-
-            <input type="radio" id="joseon" name="drone" value="joseon">
-            <label for="joseon">조선대</label>
-
-          </div>
           
-        <div>
-            <!-- <input required placeholder="Name" type="text"/>         -->
-            <input type="datetime-local">
-            <!-- <input required placeholder="PhoneNumber" minlength="11" type="tel"/> -->
-            <input type="submit" onclick="reservcu()" value="예약 현황 보기">  
-        </div>
-        </form>
-        <div class="reservPic">
-        <img src="c1.jpg" width=80% align=center alt="">
-        </div>
-        <div class="reservwin">
-            <input type="button" value="~월~일">
-        </div>
-
+        <div class="inputs">
+            <form>
+                
+                <p >
+                <input class="block2"required type="text" placeholder="이름">
+                </p>
+                
+                <p >
+                <input class="block3" required type="tel"placeholder="전화번호" minlength="11">
+                </p> 
+                <p>
+                <!-- <input required placeholder="Name" type="text"/>         -->
+                <input class="block1" required type="datetime-local">
+                <!-- <input required placeholder="PhoneNumber" minlength="11" type="tel"/> -->
+                </p> 
+                <p > 
+                <input class="BtnSub"type="submit" value="결제">
+                </p> 
+      
+            </form>
+       
     </main>
 
     <footer>
