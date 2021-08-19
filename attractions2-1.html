@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+    <script language = "javascript">   
+        function showImage() {
+            var imgArray = new Array();
+            imgArray[0] = "c1.jpg";
+            imgArray[1] = "c2.jpg";
+    
+            var imgNum = Math.round(Math.random());
+            var objImgsrc = imgArray[imgNum];
+            document.getElementById('introImg').innerHTML = "<img src='" + objImgsrc +"' width='100%', height='auto'>";
+        }
+
+        function top_clicked(event) {
+            document.getElementById('test').innerHTML = document.getElementById("top").className;
+            if (event.target.classList[1] == "clicked"){
+                event.target.classList.remove("clicked");
+            }
+            else{
+                event.target.className = "clicked";
+            }
+        }
+        var normal = document.getElementById("top");
+        normal[0].addEventListener("click", top_clicked);
+        normal[1].addEventListener("click", top_clicked);
+
+
+    </script>
+    <title> Home - NEW TRIP </title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        ul{
+            list-style: none;
+            padding-left: 0px;
+        }
+        .container {
+            left:100px;
+            top:20px;
+            position:relative;
+        }
+    </style>
+</head>
+
+<body >
+    <header>
+        <h1><a href="home.html"> Title </a></h1>
+        
+        <nav class="barmenu">
+            <ul class="topMenu">
+                <li id="top"><a href="campus.html"> 캠퍼스 숙박 </a></li>
+                <li id="top"><a href="reserv.html"> 예약 </a></li>
+                <li id="top" style="background-color: rgb(68, 6, 150);
+                border-radius: 12px;"><a href="attractions.html"> 여행지 </a></li>
+                <li id="top"><a href="festival.html"> 축제 </a></li>
+            </ul> 
+        <div id="introImg"></div>
+        <div id="test"></div>
+        </nav>
+        </a>
+    </header>
+    <main>
+        <div class="btns">
+            <input type="button" value="1" onclick="location.href='attractions2-1.html'">
+            <input type="button" value="2" onclick="location.href='attractions2-2.html'">
+            <input type="button" value="3" onclick="location.href='attractions2-3.html'">
+            <input type="button" value="4" onclick="location.href='attractions2-4.html'">
+        </div>
+        <div class="localbtns">
+            <input type="button" value="전북" onclick="location.href='attractions2-1.html'">
+            <input type="button" value="전남" onclick="location.href='attractions.html'">
+        </div>
+        <article class="container">
+            <div class>
+                <table>
+                    <tr>
+                        <td><img src="https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=99a71cef-ad8e-4ca9-8e3a-3b72a6163037&thumb" width=270px style="padding: 10px 10px;"></td>
+
+                        <td>
+                        <dl>
+                            <dt><h3>하늘구름길캠핑장</h3></dt>
+                            <dd>전북 임실군,010-4054-9501<br>#레포츠</dd>
+                        </td>
+                        </dl>
+                    </tr>
+
+                    <tr>
+                        <td><img src="https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=5ad70378-9ce5-40f5-8dae-9865eb0fc825&thumb" width=270px style="padding: 10px 10px;"></td>
+
+                        <td>
+                        <dl>
+                            <dt><h3>무주수목원캠핑장</h3></dt>
+                            <dd>전북 무주군,063-322-0080<br>#레포츠</dd>
+                        </td>
+                        </dl>
+                    </tr>
+
+                    <tr>
+                        <td><img src="https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=ada79c94-4a38-4d8f-b1bf-110a356527ea&thumb" width=270px style="padding: 10px 10px;"></td>
+
+                        <td>
+                        <dl>
+                            <dt><h3>도란도란</h3></dt>
+                            <dd>전북 전주시,010-2525-1099<br>#레포츠</dd>
+                        </td>
+                        </dl>
+                    </tr>
+
+                    <tr>
+                        <td><img src="https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=5f327fa2-695d-4a2d-93cb-b84920b6d663&thumb" width=270px style="padding: 10px 10px;"></td>
+
+                        <td>
+                        <dl>
+                            <dt><h3>동백대교</h3></dt>
+                            <dd>전북 군산시,063-465-5186<br>#관광지</dd>
+                        </td>
+                        </dl>
+                    </tr>
+                </table>           
+        </div>
+        </article>
+        
+    </main>
+
+    <footer>
+
+    </footer>
+
+    
+</body>
+</html>

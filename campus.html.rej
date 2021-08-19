@@ -1,0 +1,10 @@
+diff a/campus.html b/campus.html	(rejected hunks)
+@@ -34,7 +34,7 @@
+         }
+ 
+     </script>
+-    <title> Home - NEW TRIP </title>
++    <title> Usher O'showing </title>
+     <style>
+         h1{
+             text-align: center;

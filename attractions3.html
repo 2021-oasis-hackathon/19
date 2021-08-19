@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+    <script language = "javascript">   
+        function showImage() {
+            var imgArray = new Array();
+            imgArray[0] = "c1.jpg";
+            imgArray[1] = "c2.jpg";
+    
+            var imgNum = Math.round(Math.random());
+            var objImgsrc = imgArray[imgNum];
+            document.getElementById('introImg').innerHTML = "<img src='" + objImgsrc +"' width='100%', height='auto'>";
+        }
+
+        function top_clicked(event) {
+            document.getElementById('test').innerHTML = document.getElementById("top").className;
+            if (event.target.classList[1] == "clicked"){
+                event.target.classList.remove("clicked");
+            }
+            else{
+                event.target.className = "clicked";
+            }
+        }
+        var normal = document.getElementById("top");
+        normal[0].addEventListener("click", top_clicked);
+        normal[1].addEventListener("click", top_clicked);
+
+
+    </script>
+    <title> Home - NEW TRIP </title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        ul{
+            list-style: none;
+            padding-left: 0px;
+        }
+        .container {
+            left:100px;
+            top:20px;
+            position:relative;
+        }
+
+    </style>
+</head>
+
+<body >
+    <header>
+        <h1><a href="home.html"> Title </a></h1>
+        
+        <nav class="barmenu">
+            <ul class="topMenu">
+                <li id="top"><a href="campus.html"> 캠퍼스 숙박 </a></li>
+                <li id="top"><a href="reserv.html"> 예약 </a></li>
+                <li id="top" style="background-color: rgb(68, 6, 150);
+                border-radius: 12px;"><a href="attractions.html"> 여행지 </a></li>
+                <li id="top"><a href="festival.html"> 축제 </a></li>
+            </ul> 
+        <div id="introImg"></div>
+        <div id="test"></div>
+        </nav>
+        </a>
+    </header>
+    <main>
+        <div class="btns">
+            <input type="button" value="1" onclick="location.href='attractions.html'">
+            <input type="button" value="2" onclick="location.href='attractions2.html'">
+            <input type="button" value="3" onclick="location.href='attractions3.html'">
+            <input type="button" value="4" onclick="location.href='attractions4.html'">
+        </div>
+<article class="container">
+    <div class>
+        <table>
+            <tr>
+                <td><img src="https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=1cd8169b-e35e-4b34-9f7d-1c4a0c80fb60&thumb" width=270px style="padding: 10px 10px;"></td>
+
+                <td>
+                <dl>
+                    <dt><h3>나만 알고 싶은 고흥의 섬으로 떠나는 랜선 여행</h3></dt>
+                    <dd>전남 고흥군<br>#거금도#고흥가볼만한곳#고흥여행#나로도#나로우주센터우주과학관#랜선여행#쑥섬#애도#연홍도</dd>
+                </td>
+                </dl>
+            </tr>
+
+            <tr>
+                <td><img src="https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=d233242e-c9b5-4a21-ae7f-8fb35721e23b&thumb" width=270px style="padding: 10px 10px;"></td>
+
+                <td>
+                <dl>
+                    <dt><h3>더스타오토캠핑장</h3></dt>
+                    <dd>전남 여수시,061-641-1490<br>#레포츠</dd>
+                </td>
+                </dl>
+            </tr>
+
+            <tr>
+                <td><img src="https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=5f6f8d0f-e702-480e-abd8-fa75395c3074&thumb" width=270px style="padding: 10px 10px;"></td>
+
+                <td>
+                <dl>
+                    <dt><h3>진도개테마파크</h3></dt>
+                    <dd>전남 진도군,061-540-6308<br>#관광지</dd>
+                </td>
+                </dl>
+            </tr>
+
+            <tr>
+                <td><img src="https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=600280d4-6622-4bd0-8bab-8d68fcce60be&thumb" width=270px style="padding: 10px 10px;"></td>
+
+                <td>
+                <dl>
+                    <dt><h3>영암군립하정웅미술관</h3></dt>
+                    <dd>전남 영암군,061-470-6841<br>#문화시설</dd>
+                </td>
+                </dl>
+            </tr>          
+        </table>
+</div>
+</article>
+</main>
+
+<footer>
+
+</footer>
+
+
+</body>
+</html>
