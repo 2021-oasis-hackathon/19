@@ -22,14 +22,20 @@ dl {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(250, 158, 37);
+  background-color: red;
   padding: 8px 50px;
   font-size: 22px;
   border-radius: 20px;
 }
+.topMenu a {
+  color: beige;
+}
+.topMenu a:hover{
+  color: white;
+}
 
 .topMenu li {
-  background-color: rgb(250, 158, 37);
+  background-color: red;
   padding: 8px 12px;
   font-family: "Black Han Sans", sans-serif;
 }
