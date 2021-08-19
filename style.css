@@ -16,6 +16,50 @@ dl {
   left: 40px;
   position: relative;
 }
+.inputs {
+  padding-top: 100px;
+  text-align: center;
+}
+
+.block1 {
+  display: inline-block;
+  width: 300px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Gowun Dodum";
+}
+
+.block2 {
+  display: inline-block;
+  width: 300px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Gowun Dodum";
+}
+
+.block3 {
+  display: inline-block;
+  width: 300px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Gowun Dodum";
+}
+
+.BtnSub {
+  display: inline-block;
+  width: 120px;
+  height: 30px;
+  line-height: 45px;
+  text-align: center;
+  font-size: 15px;
+  font-family: "Gowun Dodum";
+}
 
 .topMenu {
   padding-left: 0;
