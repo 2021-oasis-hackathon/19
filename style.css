@@ -16,51 +16,6 @@ dl {
   left: 40px;
   position: relative;
 }
-.inputs {
-  padding-top: 100px;
-  text-align: right;
-  padding-right: 120px;
-}
-
-.block1 {
-  display: inline-block;
-  width: 300px;
-  height: 45px;
-  line-height: 45px;
-  text-align: center;
-  font-size: 20px;
-  font-family: "Gowun Dodum";
-}
-
-.block2 {
-  display: inline-block;
-  width: 300px;
-  height: 45px;
-  line-height: 45px;
-  text-align: center;
-  font-size: 20px;
-  font-family: "Gowun Dodum";
-}
-
-.block3 {
-  display: inline-block;
-  width: 300px;
-  height: 45px;
-  line-height: 45px;
-  text-align: center;
-  font-size: 20px;
-  font-family: "Gowun Dodum";
-}
-
-.BtnSub {
-  display: inline-block;
-  width: 120px;
-  height: 30px;
-  line-height: 45px;
-  text-align: center;
-  font-size: 15px;
-  font-family: "Gowun Dodum";
-}
 
 .topMenu {
   padding-left: 0;
@@ -105,11 +60,15 @@ dl {
   height: 0;
 }
 .map-responsive iframe {
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
+  width: 80%;
+  height: 70%;
+  left: 120px;
   position: absolute;
+}
+
+.reservMain {
+  margin: 50px;
+  text-align: center;
 }
 
 .reservPic {
@@ -135,12 +94,35 @@ dl {
   top: 25px;
   position: relative;
 }
+.localbtns {
+  left: 150px;
+  position: relative;
+  width: 400px;
+}
 
-.container {
+/* .container {
   width: 80%;
   left: 100px;
   top: 100px;
   position: relative;
+} */
+
+/* .db {
+  width: 80%;
+  height: 100%;
+  left: 100px;
+  top: 100px;
+  position: relative;
+} */
+
+.reservgo {
+  width: 80%;
+  height: 50%;
+  left: 100px;
+}
+
+.reservwin {
+  display: none;
 }
 
 /* #introImg {
